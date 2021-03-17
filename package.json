@@ -1,0 +1,26 @@
+{
+  "name": "cat-cafe-connect-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd cat-cafe-client && npm start",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "dev": "nodemon --experimental-modules server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
